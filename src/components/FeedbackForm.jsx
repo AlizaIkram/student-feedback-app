@@ -46,7 +46,7 @@ const FeedbackForm = ({ onSubmit, onCancel, initialData }) => {
     onSubmit(formData);
 
     // Reset form if adding new feedback
-    if (!initialData) {
+    
       setFormData({
         name: '',
         email: '',
@@ -57,7 +57,7 @@ const FeedbackForm = ({ onSubmit, onCancel, initialData }) => {
         rating: 0,
         response: '',
       });
-    }
+    
   };
 
   return (
